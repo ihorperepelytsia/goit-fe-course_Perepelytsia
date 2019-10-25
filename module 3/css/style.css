@@ -15,120 +15,92 @@ body {
     line-height: 24px;
 }
 
-.container {
+.wrapper {
     width: 900px;
     margin: 0 auto;
-}
-
-.page-header {
-    margin-top: 77px;
-    margin-bottom: 104px;
+    font-size: 0px;
 }
 
 .site-navigation {
-    font-size: 14px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
-.site-navigation-a {
+.site-navigation-menu {
+    padding: 77px 0 104px 123px;
+}
+
+.site-navigation-list {
+    font-size: 14px;
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+
+}
+
+.site-navigation-item {
+    display: inline-block;
+}
+
+.site-navigation-link {
     color: #626262;
     font-family: "Playfair Display";
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
-    /* margin-right: 121px; */
+    padding-right: 100px;
+    margin: 0 auto;
 }
 
-
-.site-navigation li {
-    display: inline-block;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
     color: #03a9f4;
 }
 
-.l1 a {
-    height: 11px;
-    margin-right: 121px;
+.puzzle .puzzle-block {
+    width: 420px;
+    display: inline-block;
+    margin-right: 60px;
+    vertical-align: top;
 }
 
-.l2 a {
-    height: 11px;
-    margin-right: 103px;
+.puzzle .puzzle-block:last-of-type {
+    margin-right: 0px;
 }
 
-.l3 a {
-    height: 11px;
-    margin-right: 95px;
-}
-
-.l4 a {
-    height: 11px;
-    text-transform: uppercase;
-}
-
-section h4 {
+.puzzle-block-headline1 {
     color: #b4ad9e;
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 0px 0px 28px 1px;
+    padding: 0 0 28px 1px;
 }
 
-img {
-    margin-bottom: 32px;
-}
-
-section h3 {
+.puzzle-block-headline2 {
     font-size: 30px;
     font-weight: 400;
-    margin: 0px 0px 34px 1px;
+    padding: 0px 0px 34px 1px;
 }
 
-.text-paragraphs {
+.puzzle-block-paragraph {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    overflow: hidden;
-    margin: 0px 0px 138px 1px;
+    display: block;
+    padding: 0 0 132px 1px;
+    overflow: visible;
 }
 
-.mainblock {
-    font-size: 0px;
-}
-
-main section {
-    width: 420px;
-    display: inline-block;
-    margin-right: 60px;
-}
-
-main section:nth-child(2n) {
-    margin-right: 0px;
-}
-
-.road .text-paragraphs {
-    margin-bottom: 54px;
-}
-
-.woomen .text-paragraphs {
-    margin-bottom: 54px;
-}
-
-.power-button {
+.button {
     text-align: center;
     margin-bottom: 70px;
 }
 
-.power-button-1 {
-
+.button-button {
     color: #626262;
     font-family: "Playfair Display";
     font-size: 20px;
@@ -137,6 +109,4 @@ main section:nth-child(2n) {
     border: 1px solid #626262;
     background: transparent;
     padding: 21px 34px 22px;
-    margin: 0px auto;
-
 }
