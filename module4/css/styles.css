@@ -1,0 +1,251 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Меню */
+
+
+.page-header {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.page-nav {
+    padding: 38px 29px 105px;
+}
+
+.site-logo {
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.site-navigation {
+    float: right;
+    width: 467px;
+    font-size: 14px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation li:not(:last-child) {
+    padding-right: 30px;
+}
+
+.site-navigation a {
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+    letter-spacing: -0.28px;
+}
+
+/* 1-й див */
+
+.box {
+
+    padding: 0px 29px 100px;
+    overflow: hidden;
+    height: auto;
+}
+
+.cart__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart__list__item {
+    width: 255px;
+    height: 322px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #e9f0fd;
+    cursor: pointer;
+}
+
+.cart__list__item:nth-of-type(4n) {
+    margin-right: 0px;
+}
+
+.cart-list-img {
+    overflow: hidden;
+    height: 283px;
+    line-height: 283px;
+    text-align: center;
+}
+
+.cart-img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.cart-text {
+    height: calc(322px - 283px);
+    line-height: calc(322px - 283px);
+    background: #323232;
+    overflow: hidden;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+}
+
+.cart-title {
+    padding-left: 14px;
+}
+
+.cart-price {
+    float: right;
+    background: #8c8c8c;
+    padding: 0 12px;
+    transition-duration: 0.3s;
+}
+
+.cart__list__item:hover .cart-text {
+    background: #1abc9c;
+}
+
+.cart__list__item:hover .cart-price {
+    background: #7fd9c7;
+}
+
+
+
+
+.box__headline {
+    color: #515151;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: -0.96px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 2px;
+}
+
+.box__headline::after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 81px;
+}
+
+
+/* Нижний див */
+.holder {
+    height: auto;
+    overflow: hidden;
+    padding: 0px 29px 82px;
+}
+
+.holder__list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.holder__item {
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+}
+
+.holder__item:last-of-type {
+    margin-right: 0px;
+}
+
+.holder__headline {
+    color: #555252;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    padding-top: 14px;
+}
+
+.holder__headline::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    margin: 11px 0px 29px;
+}
+
+.holder__paragraph {
+    color: #555252;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    padding-bottom: 16px;
+}
+
+.holder__btr {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    border: 1px solid #4ec6ab;
+    border-radius: 5%;
+    background-color: #4ec6ab;
+    padding: 19px 42px;
+    cursor: pointer;
+
+}
