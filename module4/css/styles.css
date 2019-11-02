@@ -38,7 +38,7 @@ body {
 }
 
 .page-nav {
-    padding: 38px 29px 105px;
+    padding: 38px 29px 32px;
 }
 
 .site-logo {
@@ -55,15 +55,15 @@ body {
     margin: 0px;
 }
 
-.site-navigation li {
+.site-navigation-item {
     float: left;
 }
 
-.site-navigation li:not(:last-child) {
+.site-navigation-item:not(:last-child) {
     padding-right: 30px;
 }
 
-.site-navigation a {
+.site-navigation-item a {
     color: #0f0101;
     font-family: "Open Sans";
     font-weight: 700;
@@ -75,7 +75,6 @@ body {
 .site-navigation a:hover,
 .site-navigation a:focus {
     color: #1abc9c;
-    letter-spacing: -0.28px;
 }
 
 /* 1-й див */
@@ -87,13 +86,13 @@ body {
     height: auto;
 }
 
-.cart__list {
+.cart-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.cart__list__item {
+.cart-list-item {
     width: 255px;
     height: 322px;
     float: left;
@@ -103,7 +102,7 @@ body {
     cursor: pointer;
 }
 
-.cart__list__item:nth-of-type(4n) {
+.cart-list-item:nth-of-type(4n) {
     margin-right: 0px;
 }
 
@@ -142,18 +141,18 @@ body {
     transition-duration: 0.3s;
 }
 
-.cart__list__item:hover .cart-text {
+.cart-list-item:hover .cart-text {
     background: #1abc9c;
 }
 
-.cart__list__item:hover .cart-price {
+.cart-list-item:hover .cart-price {
     background: #7fd9c7;
 }
 
 
 
 
-.box__headline {
+.box-headline {
     color: #515151;
     font-family: "Roboto", sans-serif;
     font-size: 48px;
@@ -167,7 +166,7 @@ body {
     padding-top: 2px;
 }
 
-.box__headline::after {
+.box-headline::after {
     content: "";
     display: block;
     width: 164px;
@@ -186,23 +185,23 @@ body {
     padding: 0px 29px 82px;
 }
 
-.holder__list {
+.holder-list {
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-.holder__item {
+.holder-item {
     width: 350px;
     float: left;
     margin-right: 30px;
 }
 
-.holder__item:last-of-type {
+.holder-item:last-of-type {
     margin-right: 0px;
 }
 
-.holder__headline {
+.holder-headline {
     color: #555252;
     font-family: "Open Sans";
     font-size: 18px;
@@ -212,7 +211,7 @@ body {
     padding-top: 14px;
 }
 
-.holder__headline::after {
+.holder-headline::after {
     content: "";
     display: block;
     width: 136px;
@@ -221,7 +220,7 @@ body {
     margin: 11px 0px 29px;
 }
 
-.holder__paragraph {
+.holder-paragraph {
     color: #555252;
     font-family: "Open Sans";
     font-size: 14px;
@@ -231,7 +230,7 @@ body {
     padding-bottom: 16px;
 }
 
-.holder__btr {
+.holder-btr {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 16px;
@@ -243,5 +242,4 @@ body {
     background-color: #4ec6ab;
     padding: 19px 42px;
     cursor: pointer;
-
 }
