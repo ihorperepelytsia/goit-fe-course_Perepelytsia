@@ -48,6 +48,8 @@ header {
     transition-property: border-bottom, color, padding-bottom;
     transition-duration: 200ms;
     transition-timing-function: linear;
+    border-bottom: 0px solid #f38181;
+    padding-bottom: 0;
 }
 
 .site-navigation-link:hover,
@@ -58,26 +60,7 @@ header {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ВЕРХНИЙ БЛОК */
-/* .box-service {
-    margin-bottom: 92px;
-} */
 
 .mini-headline {
     color: #333333;
@@ -86,7 +69,6 @@ header {
     font-weight: 400;
     text-align: center;
     margin: 0;
-    padding: 0;
     margin-bottom: 22px;
 }
 
@@ -98,7 +80,6 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    padding: 0;
     margin-bottom: 56px;
 }
 
@@ -117,11 +98,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
     list-style: none;
     padding: 0;
     margin: 0;
-    
 }
 
 .service-headline {
@@ -148,7 +127,7 @@ header {
     padding-left: 80px;
     padding-bottom: 99px;
     position: relative;
-    
+
 }
 
 .service-item::before {
@@ -187,17 +166,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* НИЖНИЙ БЛОК */
 .our-team-paragraph {
     width: 944px;
@@ -208,7 +176,6 @@ header {
     line-height: 24px;
     text-align: center;
     margin: 0 auto;
-    padding: 0;
     margin-bottom: 92px;
 }
 
@@ -228,23 +195,24 @@ header {
     height: 470px;
     margin-bottom: 31px;
     cursor: pointer;
-
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 }
 
 .box-icons {
     width: 380px;
-    margin: 0;
-    padding: 0;
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
-    z-index: 100;
-    transition-property: all;
+    padding: 207px 0;
+    transition-property: transform, background-image, box-shadow, display;
     transition-duration: 200ms;
     transition-timing-function: linear;
-    padding: 207px 0;
-
+    transform: translate(0px, 0px);
+    background-image: none;
+    box-shadow: 0px 0px 0px 0px #95e1d3;
+    display: none;
 }
 
 .box-icon {
@@ -255,7 +223,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     border-right: 1px solid #e3ab81;
-    transition-property: opacity, background-color;
+    transition-property: background-color;
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
@@ -288,14 +256,11 @@ header {
 .box-icon:hover,
 .box-icon:focus {
     background-color: #95e1d3;
-    opacity: 1;
 }
 
 .cart-image-wrp:hover .cart-img,
 .cart-image-wrp:focus .cart-img {
     transform: translate(-10px, -10px);
-    transition-duration: 200ms;
-    transition-timing-function: linear;
 }
 
 .team-name {
@@ -325,7 +290,7 @@ header {
 /* FOOTER */
 
 footer {
-    
+
     border-top: 1px solid #e5e5e5;
 }
 
@@ -337,37 +302,39 @@ footer {
     margin: 10px auto;
 }
 
-footer span{
-color: #333333;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 400;
-margin-bottom: 10px;
+footer span {
+    color: #333333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .txt {
     color: #f38181;
 }
+
 .input-email {
-width: 230px;
-height: 40px;
-border: 1px solid #e7e7e7;
-background-color: #fff;
-color: #cccccc;
-font-family: "Roboto";
-font-size: 15px;
-font-weight: 300;
-font-style: italic;
-line-height: 24px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 24px;
 }
+
 .btn {
-width: 150px;
-height: 40px;
-background-color: #95e1d3;
-color: #fff;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 700;
-text-transform: uppercase;
-border: none;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
 }
