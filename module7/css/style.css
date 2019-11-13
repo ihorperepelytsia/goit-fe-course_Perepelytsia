@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+        url('../fonts//roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Merriweather Italic'), local('Merriweather-Italic'),
+        url('../fonts/merriweather-v21-latin/merriweather-v21-latin-italic.woff2') format('woff2'),
+        url('../fonts//merriweather-v21-latin/merriweather-v21-latin-italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts//montserrat-v14-latin/montserrat-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts//montserrat-v14-latin/montserrat-v14-latin-700.woff2') format('woff2'),
+        url('../fonts//montserrat-v14-latin/montserrat-v14-latin-700.woff') format('woff');
+}
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+/* Header */
+header {
+    margin-bottom: 127px;
+}
+
+.page-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 65px;
+}
+
+.site-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    margin-left: 40px;
+}
+
+.site-navigation-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.site-navigation-link:hover {
+    color: #fed136;
+}
+
+
+/* 1-БЛОК */
+.services {
+    margin-bottom: 120px;
+}
+
+.services-headline {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.box-paragraph {
+    color: #777777;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-services-hedline {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box-services-text {
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    margin: 0;
+    text-align: center;
+}
+
+.box-services-elements {
+    width: 30%;
+    position: relative;
+    padding-top: 120px;
+}
+
+.box-services-elements::before {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 67px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #fed136;
+    border-radius: 100%;
+    position: absolute;
+    left: 106px;
+    top: 28px;
+}
+
+.icon-basket::before {
+    background-image: url(../img/services/Icon-Basket.png);
+}
+
+.icon-laptop::before {
+    background-image: url(../img/services/Icon-Laptop.png);
+}
+
+.icon-locked::before {
+    background-image: url(../img/services/Icon-Locked.png);
+}
+
+
+/* CONTACT-box */
+.contact {
+    background-color: #222222;
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    display: block;
+    width: 614px;
+    height: 537px;
+    background-image: url(../img/Map_Image.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 614px 537px;
+    position: absolute;
+    left: 54%;
+    top: 18%;
+}
+
+.box-contact {
+    min-height: 676px;
+}
+
+.contact-headline {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-top: 110px;
+    text-align: center;
+}
+
+.contact-form {
+    font-family: Montserrat;
+    font-size: 14px;
+    letter-spacing: -0.35px;
+}
+input {
+    margin-bottom: 29px;
+}
+.form-name {
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.form-email {
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.form-subject {
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+
+textarea {
+    width: 455px;
+    height: 210px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    resize: none;
+}
+
+.form-btn {
+    background-color: #fed136;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 26px 47px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+}
+
+.form-box {
+    display: flex;
+}
+
+.valid:valid {
+    border: 1px solid green;
+}
+.valid:invalid:focus {
+    border: 1px solid red;
+}
+
+.valid:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {color: #bbbbbb;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    padding: 20px;}
+::-moz-placeholder          {color: #bbbbbb;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    padding: 20px;}
+:-moz-placeholder           {color: #bbbbbb;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+    padding: 20px;}
+:-ms-input-placeholder      {color: #bbbbbb;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+padding: 20px;
+}
