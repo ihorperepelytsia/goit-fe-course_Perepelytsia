@@ -34,8 +34,6 @@
         url('../fonts//montserrat-v14-latin/montserrat-v14-latin-700.woff') format('woff');
 }
 
-
-
 html {
     box-sizing: border-box;
 }
@@ -80,7 +78,8 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: #222222;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     font-weight: 700;
     line-height: 32px;
@@ -101,7 +100,8 @@ header {
 
 .services-headline {
     color: #222222;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -139,7 +139,8 @@ header {
 
 .box-services-text {
     color: #777777;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", sans-serif;
+    ;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.35px;
@@ -206,7 +207,8 @@ header {
 
 .contact-headline {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
@@ -218,47 +220,34 @@ header {
 }
 
 .contact-form {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     letter-spacing: -0.35px;
 }
+
 input {
     margin-bottom: 29px;
-}
-.form-name {
     width: 455px;
     height: 50px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
 }
-
-.form-email {
-    width: 455px;
-    height: 50px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-}
-
-.form-subject {
-    width: 455px;
-    height: 50px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-}
-
 
 textarea {
-    width: 455px;
-    height: 210px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
+    width: 452px;
+    height: 208px;
+    border: 1px solid #ccc;
+    background-color: #fff;
     resize: none;
+    padding: 20px;
 }
 
 .form-btn {
     background-color: #fed136;
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -277,6 +266,7 @@ textarea {
 .valid:valid {
     border: 1px solid green;
 }
+
 .valid:invalid:focus {
     border: 1px solid red;
 }
@@ -285,32 +275,42 @@ textarea {
     outline: none;
 }
 
-::-webkit-input-placeholder {color: #bbbbbb;
-    font-family: Montserrat;
+::-webkit-input-placeholder {
+    color: #bbb;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.35px;
-    padding: 20px;}
-::-moz-placeholder          {color: #bbbbbb;
-    font-family: Montserrat;
+}
+
+::-moz-placeholder {
+    color: #bbb;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.35px;
-    padding: 20px;}
-:-moz-placeholder           {color: #bbbbbb;
-    font-family: Montserrat;
+}
+
+:-moz-placeholder {
+    color: #bbb;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.35px;
-    padding: 20px;}
-:-ms-input-placeholder      {color: #bbbbbb;
-    font-family: Montserrat;
+}
+
+:-ms-input-placeholder {
+    color: #bbb;
+    font-family: Montserrat, sans-serif;
+    ;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.35px;
-padding: 20px;
 }
