@@ -1,6 +1,7 @@
-@media (min-width: 748px) {
+@media (min-width: 768px) {
     .wrapper {
-        width: 748px;
+        /* width: 768px; */
+        width: 100%;
     }
 
     header {
@@ -40,7 +41,7 @@
     }
 
     .cart {
-        width: 236px;
+        width: 46%;
     }
 
     .hunter {
@@ -64,33 +65,42 @@
     }
 }
 
-@media (min-width: 748px) and (max-width: 939px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .carts {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
-        width: 65.47%;
+        width: 64%;
         margin: 0 auto;
     }
 
     .cart {
+        /* width: 46%; */
+        width: 236px;
         margin-bottom: 46px;
+    }
+
+    .wrapper {
+        /* max-width: 750px; */
+        width: 100%;
     }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 1024px) {
     .carts {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
         margin-bottom: 46px;
+        width: 100%;
     }
 
     .cart {
+        width: 23%;
         margin: 0;
     }
 
     .wrapper {
-        width: 940px;
+    max-width: 940px;
     }
 }
