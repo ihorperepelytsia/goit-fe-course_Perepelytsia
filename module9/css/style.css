@@ -1,0 +1,82 @@
+img {
+    display: block;
+}
+
+.box-header {
+    background-color: #1a1915;
+    background-image: url(../img/image-tablet.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-btn {
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 115px;
+    transition: all 250ms linear;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    border: 2px solid #fff;
+}
+
+.box-btn {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+    padding: 10px 50px;
+    margin-bottom: 138px;
+    transition: all 250ms linear;
+}
+
+.box-btn:hover,
+.box-btn:focus {
+    background: none;
+    border: 2px solid #fff;
+}
+
+h5 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+p {
+    width: 218px;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.partners-btn {
+    color: #ff4e50;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 12px 74px;
+    border: 2px solid #ff4e50;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.partners-btn:hover,
+.partners-btn:focus {
+    background-color: #ff4e50;
+    border: 2px solid transparent;
+    color: #fff;
+}
