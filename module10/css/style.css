@@ -45,20 +45,17 @@ img {
 }
 
 /* МЕНЮ */
-.container-fluid {
+.page-welcome {
     width: 100%;
     background: url(../img/eagle.png);
     background-position: center;
     background-size: cover;
 }
 
-.container-background {
+.page-welcome-background {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
     background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
-}
-
-.main-header {
     padding-top: 1.75rem;
     text-align: center;
     margin-bottom: 4rem;
@@ -118,13 +115,13 @@ img {
     fill: #fff;
 }
 
-.main-header__title {
+.page-welcome__title {
     color: #fff;
     font-size: 72px;
     margin-bottom: 2.62rem;
 }
 
-.main-header__headline {
+.page-welcome__headline {
     width: 75%;
     color: #fff;
     font-size: 150px;
@@ -134,7 +131,7 @@ img {
     margin-bottom: 7.75rem;
 }
 
-.main-header__btn {
+.page-welcome__btn {
     padding: 0.88rem 2rem;
     color: #fff;
     font-size: 14px;
@@ -145,8 +142,8 @@ img {
     cursor: pointer;
 }
 
-.main-header__btn:hover,
-.main-header__btn:focus {
+.page-welcome__btn:hover,
+.page-welcome__btn:focus {
     border: 3px solid #fce38a;
     color: #fce38a;
 }

@@ -1,0 +1,91 @@
+.page-welcome {
+  width: 100%;
+  background: url(../images/eagle.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.page-welcome-background {
+  background-image: $line-gradient;
+  padding-top: 1.75rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page-nav {
+  @extend %flex;
+  margin-bottom: 11rem;
+}
+
+.page-nav__navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.page-nav__navigation-item {
+  margin-left: 2.8rem;
+}
+
+.page-nav__navigation-link {
+  text-decoration: none;
+  color: $primary-white-color;
+  font-family: $font-monsterrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  border-bottom: 0px solid $text-hover-color;
+
+  &:hover,
+  &:focus {
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid $text-hover-color;
+    color: $text-hover-color;
+  }
+
+  &-svg:hover,
+  &-svg:focus {
+    fill: $text-hover-color;
+  }
+}
+
+.page-nav__navigation-link-svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: $primary-white-color;
+}
+
+.page-welcome__title {
+  color: $primary-white-color;
+  font-size: 72px;
+  margin-bottom: 2.62rem;
+}
+
+.page-welcome__headline {
+  width: 75%;
+  color: $primary-white-color;
+  font-size: 150px;
+  line-height: 140px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7.75rem;
+}
+
+.page-welcome__btn {
+  padding: 0.88rem 2rem;
+  color: $primary-white-color;
+  font-size: 14px;
+  border: 3px solid $primary-white-color;
+  background: none;
+  margin-bottom: 14.4rem;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $text-hover-color;
+    color: $text-hover-color;
+  }
+}
