@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+img {
+  display: block;
+}
+
+.headline-monsterat {
+  font-family: $font-monsterrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title-kaushan-script {
+  font-family: $font-kaushan;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.text-roboto {
+  color: #999;
+  font-family: $font-roboto;
+  font-size: 15px;
+  line-height: 24px;
+}
