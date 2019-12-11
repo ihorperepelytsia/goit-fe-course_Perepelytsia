@@ -1,0 +1,110 @@
+.our-team__text {
+  font-weight: 400;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5.75rem;
+}
+
+.our-team__list {
+  @extend %flex;
+}
+
+.our-team__cart {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.our-team__cart-wrp {
+  background-color: $services-icon-color;
+  
+  &:hover .our-team__cart-links,
+  &:focus .our-team__cart-links {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+  }
+
+  &:hover .our-team__cart-img,
+  &:focus .cour-team__cart-img {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.our-team__cart-img {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.our-team__cart-links {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 207px 0;
+  transition: all 200ms linear;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  background-image: $line-gradient;
+}
+
+.our-team__cart-social-link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $text-hover-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 1px;
+  transition: all 200ms linear;
+  text-align: center;
+  line-height: 70px;
+
+  &:hover,
+  &:focus {
+    background-color: $services-headline-underline-color;
+  }
+
+  &:hover .our-team__cart-social-link-svg,
+  &:focus .our-team__cart-social-link-svg {
+    fill: $primary-white-color;
+  }
+}
+
+.our-team__cart-social-link-svg {
+  fill: $services-headline-underline-color;
+  transition: all 200ms linear;
+}
+
+.icon-facebook {
+  width: 13px;
+  height: 26px;
+}
+
+.icon-twitter {
+  width: 26px;
+  height: 22px;
+}
+
+.icon-pinterest {
+  width: 21px;
+  height: 26px;
+}
+
+.icon-instagram {
+  width: 26px;
+  height: 26px;
+}
+
+.our-team__cart-name {
+  color: $section-title-color;
+  font-size: 14px;
+  text-align: center;
+}
+
+.our-team__cart-team-job {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
